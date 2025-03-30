@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer components {
+  .left-part {
+    @apply bg-[url(https://picsum.photos/1200)] bg-cover bg-no-repeat hidden md:flex;
+  }
+
+  .right-part {
+    @apply flex justify-center items-center bg-[url(https://picsum.photos/1200)] bg-cover bg-no-repeat md:bg-none ;
+  }
+}

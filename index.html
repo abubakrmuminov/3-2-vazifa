@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwindcss</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <section class="h-screen grid md:grid-cols-1 grid-cols-2">
+      <div class="left-part"></div>
+      <div class="right-part">
+        <div class="absolute top-0 left-0 w-full bottom-0 bg-black z-10 md:hidden"></div>
+          <div class="relative z-20 text-white md:text-black">
+            <h1 class="text-5xl font-bold">Login</h1>
+            <form action="#" class="w-96">
+            <fieldset class="fieldset">
+              <legend class="fieldset-legend text-white">Email</legend>
+              <input type="email" class="input w-full text-black" placeholder="Type here" />
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend class="fieldset-legend text-white">Password</legend>
+              <input type="password" class="input w-full text-black" placeholder="Type here" />
+            </fieldset>
+            <div class="flex mt-10 gap-4 mg-10 text-center">
+              <button class="btn btn-primary btn-lg grow">Login</button>
+            <button class="btn btn-secondary btn-lg grow">Google</button>
+            </div>
+
+            <p>If you don't have an account, <a class="link" href="signup.html">SignUp</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
